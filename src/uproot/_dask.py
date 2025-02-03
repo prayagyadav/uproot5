@@ -1384,7 +1384,7 @@ def _get_ttree_form(
         branch = ttree[key]
         content_form = branch.interpretation.awkward_form(ttree.file)
         if ak_add_doc:
-            content_form = content_form.copy(parameters={"__doc__": branch.title})
+            content_form = content_form.copy(parameters={"__doc__": branch.title, "typename": branch.typename})
         contents.append(content_form)
 
     parameters = {"__doc__": ttree.title} if ak_add_doc else None
