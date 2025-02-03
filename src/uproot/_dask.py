@@ -1550,7 +1550,7 @@ which has {entry_stop} entries"""
                     partition_args.append((i, start, stop))
 
     base_form = _get_ttree_form(
-        awkward, ttrees[0], common_keys, interp_options.get("ak_add_doc")
+        awkward, ttrees[0], common_keys, interp_options.get("ak_add_doc"), interp_options.get("ak_add_typename")
     )
 
     if len(partition_args) == 0:
@@ -1624,7 +1624,7 @@ def _get_dak_array_delay_open(
             ignore_duplicates=True,
         )
         base_form = _get_ttree_form(
-            awkward, obj, common_keys, interp_options.get("ak_add_doc")
+            awkward, obj, common_keys, interp_options.get("ak_add_doc"), interp_options.get("ak_add_typenames")
         )
 
     divisions = [0]
