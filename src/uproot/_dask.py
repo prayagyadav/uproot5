@@ -1624,7 +1624,7 @@ def _get_dak_array_delay_open(
             ignore_duplicates=True,
         )
         base_form = _get_ttree_form(
-            awkward, obj, common_keys, interp_options.get("ak_add_doc"), interp_options.get("ak_add_typenames")
+            awkward, obj, common_keys, interp_options.get("ak_add_doc"), interp_options.get("ak_add_typename")
         )
 
     divisions = [0]
